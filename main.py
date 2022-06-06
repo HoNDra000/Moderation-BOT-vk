@@ -26,7 +26,7 @@ for event in longpoll.listen():
     if event.type == VkBotEventType.MESSAGE_NEW:
         id = event.chat_id
         a = str(652064171)#str(get_random_id())
-        if 'chck server stable' in str(event):
+        if 'check server stable' in str(event):
             if event.from_chat:
                 kick(id, a)
                 send(id, 'Server stable.')
